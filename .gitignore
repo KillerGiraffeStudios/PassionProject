@@ -1,0 +1,14 @@
+#ignores local library directory for building
+Library
+
+#ignores temp folder
+Temp
+
+#ignores the obj library
+obj
+
+#ignore file types 
+*.vs
+*.suo
+*.user
+*.userprefs
