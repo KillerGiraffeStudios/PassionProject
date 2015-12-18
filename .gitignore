@@ -1,11 +1,11 @@
 #ignores local library directory for building
-Library
+Project Poison/Library
 
 #ignores temp folder
-Temp
+Project Poison/Temp
 
 #ignores the obj library
-obj
+Project Poison/obj
 
 #ignore file types 
 *.vs
