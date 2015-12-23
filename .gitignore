@@ -10,8 +10,15 @@ Project Poison/obj
 #ignore Project in Visual Studios
 Project Poison/Project Poison.CSharp.csproj
 
+#
+
 #ignore file types 
 *.vs
 *.suo
 *.user
 *.userprefs
+*.meta
+*.unityproj
+*.booproj
+*.pidb
+*.sln
