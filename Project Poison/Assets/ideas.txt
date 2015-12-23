@@ -1,0 +1,86 @@
+Gameplay
+-player options(health, defence, energy, crit%/damage, dodge, hit chance)
+-enemy (types,health)
+-both keyboard and mouse GUI
+-queue actions vs turn based
+-Mini games gain health & energy
+GUI*************FIRST
+-attack
+-special
+-defend
+-item
+
+Storyline
+-comedic
+-speech options(graph)
+-genre tree
+-logo
+-name
+
+
+
+
+Companions?
+collaborate/feat 
+
+
+
+
+Background banter
+eg(yeah,good job, you suck, fuck you, right on, get off the stage)
+
+something cool
+-user base - main char cat
+expandable
+DLC ready
+Character customization
+2D
+aspiring thing
+kung-fu
+backroom fights to rise
+top down
+unlock beats
+
+
+inventory
+-Weapons(weapon upgradeable)
+-char Stats
+-
+
+Gained on fight completion
+Items
+-HP & MP Drugs (cocaine, steroids, adderall, 
+-Hookers
+
+mini games
+-train game
+entertaining
+engaging
+
+SAVE!!
+LOAD!!
+Checkpoint
+Linear
+
+
+Quick intro
+kinda learn controls
+just making it
+
+First Boss
+-The Bronus Bros
+-pick weapon
+-
+
+Tutorial
+-
+
+
+
+Ways of fighting
+-selection****
+-fighting
+-timing - map to tracks
+-top down shoot
+-top down turn based
+-racing
