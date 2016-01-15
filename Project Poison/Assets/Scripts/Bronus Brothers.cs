@@ -12,6 +12,7 @@ public class BronusBrothers : MonoBehaviour {
     int energy;
     int critChance;
     float critMultiplier;
+    bool alive;
     System.Random rand;
 
 
@@ -25,6 +26,7 @@ public class BronusBrothers : MonoBehaviour {
         critChance = 10;
         attack = 4;
         critMultiplier = 1.5f;
+        alive = true;
     }
 
     // Update is called once per frame
@@ -62,6 +64,11 @@ public class BronusBrothers : MonoBehaviour {
     void DamageRecieved(int enemyDamage)
     {
         health = enemyDamage - defense;
+        if(health <=0)
+        {
+            alive = false;
+            SendMessage("Win");
+        }
     }
 
     int Dealdamage()

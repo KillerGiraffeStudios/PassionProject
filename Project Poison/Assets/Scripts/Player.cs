@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     int energy;
     int critChance;
     float critMultiplier;
+    bool alive;
     System.Random rand;
 
 
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour {
         critChance = 10;
         attack = 4;
         critMultiplier = 2;
+        alive = true;
 	}
 	
 	// Update is called once per frame
@@ -61,6 +63,11 @@ public class Player : MonoBehaviour {
     void DamageRecieved(int enemyDamage)
     {
         health = enemyDamage - defense;
+        if (health <= 0)
+        {
+            alive = false;
+            SendMessage("GameOver");
+        }
     }
 
     int Dealdamage()
