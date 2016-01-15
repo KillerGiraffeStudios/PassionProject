@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BarScript : MonoBehaviour {
     RectTransform rect;
+    Text barText;
+    public int maxSize;
 	// Use this for initialization
 	void Start () {
         rect = gameObject.GetComponent<RectTransform>();
-        int num = 100;//getMaxSize from health/power script
-        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, num);
+        //maxSize = 100;//getMaxSize from health/power script
+        rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, maxSize);
         //setBackBar to +2 of max
-        GameObject.Find("Max"+gameObject.name).GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, num + 2);
+        barText = GameObject.Find(gameObject.name + "Text").GetComponent<Text>();
+        barText.text = maxSize + "/" + maxSize;
+        GameObject.Find(gameObject.name+"Max").GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, maxSize + 2);
     }
 
     /// <summary>
@@ -19,6 +24,7 @@ public class BarScript : MonoBehaviour {
     public void setBar(int num) {
         if (num < 0) num = 0;//uneeded later
         rect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, num);
+        barText.text = num + "/" + maxSize;
     }
 
 	// Update is called once per frame
