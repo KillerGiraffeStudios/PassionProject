@@ -5,11 +5,14 @@ public class NoteScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //move the object downwards
+    public float movementSpeed = 10;
+
+    void Update()
+    {
+        transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
+    }
 }
